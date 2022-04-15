@@ -1,0 +1,9 @@
+----------------------- COMMIX ----------------------
+
+Description - All-in-One Command Injection Tool
+
+Note: Works with Medium and low Security
+
+Example:
+
+commix --url "http:192.168.56.1" --cookie="_data_" --data="_data_"

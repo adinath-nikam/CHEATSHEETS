@@ -1,0 +1,22 @@
+
+Dependencies: animated_text_kit: ^2.2.0
+
+SizedBox(
+            width: 250.0,
+            child: TypewriterAnimatedTextKit(
+                onTap: () {
+                  print("Tap Event");
+                },
+                speed: Duration(milliseconds: 100),
+                totalRepeatCount: 50,
+                text: [
+                  "Made in ♥ India",
+                ],
+                textStyle: TextStyle(
+                    fontSize: 30.0,
+                    fontFamily: "font_primary"
+                ),
+                textAlign: TextAlign.start,
+                alignment: AlignmentDirectional.topStart // or Alignment.topLeft
+            ),
+          ),

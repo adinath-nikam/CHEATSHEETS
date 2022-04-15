@@ -1,0 +1,11 @@
+#To Add Domains
+
+db insert domains 
+
+# To View Domains
+
+show domains
+
+# Workspaces Operations
+
+workspaces [create | delete | list | select] [workspace_name]

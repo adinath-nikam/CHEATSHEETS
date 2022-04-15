@@ -1,0 +1,34 @@
+--------------- WFUZZ -------------------
+
+Description- Fuzzing Tool ( Directory Brute Frce, Form Credential Brute Force, Finding Hidden Content ).
+
+----------------------------- Form Credetial Brute frce -------------------------------
+
+Example: 
+
+wfuzz -c -w /root/Desktop/worldlist.txt/ --hs Invalid -d "login=FUZ2Z&password=FUZZ" -u http://localhost/bWAPP/login.php
+
+options --
+
+-c           output with colors
+-w          Path to Worldlist
+--hs       regex
+-d           request (POST)
+
+FUZ2Z  -  To be replaced with worldlist data
+FUZZ    -  To be replace with worldlist data
+
+- u          web url
+
+
+wfuzz --help                                 // For more details and options
+
+
+
+-------------------------------- DIRECTORY BUTEFORCE ---------------------------------
+
+wfuzz -w /usr/share/wordlists/wfuzz/general/megabeast.txt --hc 403,404 -u http://localhost/bWAPP/FUZZ
+
+--hc         hide content with status code 400,403
+
+FUZZ       Brute force from FUZZ place.
